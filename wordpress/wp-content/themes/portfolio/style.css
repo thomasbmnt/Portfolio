@@ -1,0 +1,304 @@
+/*
+Theme Name: PortFolio 1.0
+Theme URI: 
+Author: Thomas Beaumont
+Author URI: http://www.tb-webdev.com/
+Description: Super thème pour portfolio !
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: cool, super, génial, etc
+Text Domain: twentyeleven
+*/
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	background: #fff;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+  background: url("../images/bg.png");
+  font: normal 100%/1.5 Cambria, Georgia, serif;
+  position: relative;
+}
+section#Accueil,
+div.conteneur {
+  width: 75%;
+  /* Taille de base : 960px */
+
+  margin: auto;
+  min-width: 750px;
+  max-width: 1500px;
+}
+header#top {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+}
+header#top h1 {
+  background: url("../images/logo.png") no-repeat center;
+  text-indent: -9999px;
+  float: left;
+  vertical-align: middle;
+  margin-top: 5.5px;
+}
+header#top h1 a {
+  display: block;
+  width: 150px;
+  height: 39px;
+}
+header#top nav {
+  float: right;
+}
+
+
+/*
+header#top nav ul li.separationMenu
+{
+	border-right: 1px solid white;
+}
+*/
+section#Accueil {
+  padding-top: 80px;
+}
+
+section#Accueil h2 em
+{
+	color: #e12826;
+	display: block;
+	font-weight: bold;
+}
+
+section#Accueil h2 {
+  color: #f69838;
+  width: 45%;
+  font-size: 3.375em;
+  line-height: 1.2em;
+  /* 54 / 16 px */
+
+  float: left;
+  font-weight: normal;
+
+}
+
+aside#introduction p
+{
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+section#Accueil aside#introduction {
+  width: 50%;
+  float: right;
+  font-size: 1.5em;
+  /* 24 / 16px */
+
+}
+span.clear {
+  clear: both;
+}
+section#Derniere_realisations,
+section#Contact {
+  clear: both;
+  padding: 1.5em 0;
+  background: url("../images/dark_bg.png");
+  color: #FFF;
+  -webkit-box-shadow: inset 0px 5px 3px 1px #000000;
+  box-shadow: inset 0px 5px 3px 1px #000000;
+}
+section#Derniere_realisations h2,
+section#Contact h2,
+section#Creations h2 {
+  color: #FFF;
+  margin-bottom: 35px;
+  font-size: 1.875em;
+  /* 30 / 16px */
+
+  display: inline-block;
+}
+section#Derniere_realisations p#texte_Derniere_realisations em {
+  font-weight: bold;
+}
+section#Derniere_realisations p#texte_Derniere_realisations {
+  width: 75%;
+  font-size: 1.25em;
+  /* 20 / 16px */
+
+}
+aside#autoP {
+  width: 400px;
+  float: right;
+}
+/** Creations **/
+section#Creations {
+  margin-top: 30px;
+}
+section#Creations h2 {
+  color: #000;
+}
+ul#liste_creations li {
+  float: left;
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #000;
+  margin: 0.5em 0.5em;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+/** Contact **/
+section#Contact form fieldset legend {
+  display: none;
+}
+section#Contact form fieldset {
+  width: 50%;
+  margin: auto;
+  color: #FFF;
+  font-size: 1.5em;
+  /* 24 / 16px */
+
+  font-weight: bold;
+}
+section#Contact form label {
+  width: 35%;
+  float: left;
+  clear: left;
+  display: block;
+}
+section#Contact form input,
+section#Contact form textarea {
+  width: 60%;
+  float: right;
+  display: block;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #FFF;
+}
+section#Contact form input {
+  height: 24px;
+}
+section#Contact form input[type="submit"],
+section#Contact form input[type="reset"] {
+  width: 20%;
+  height: 30px;
+  color: #FFF;
+  border: none;
+  margin-top: 20px;
+}
+section#Contact form input[type="submit"] {
+  clear: both;
+  float: right;
+  background-color: #425957;
+}
+section#Contact form input[type="reset"] {
+  float: left;
+  background-color: #D96666;
+}
+section#Contact form textarea {
+  height: 72px;
+  max-width: 450px;
+}
+hr {
+  clear: both;
+  margin: 20px 0;
+}
+
+
+#nav_effect { 
+	list-style: none; 
+	position: relative; 
+	margin-top: 6px;
+}
+#nav_effect li { 
+	display: inline-block; 
+}
+#nav_effect li a { 
+	position: relative; 
+	z-index: 200; 
+	text-transform: uppercase; 
+	
+	font-size: 1.125em;
+	  /* 18 / 16px */
+	
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 0.3em 0.7em;
+	display: block;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+
+}
+#nav_effect li a:hover { 
+	color: white; 
+}
+#nav_effect #magic-line-two { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100px; 
+	background: #f79a38; 
+	z-index: 100; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.current_page a { 
+	color: white !important; 
+}
+.ie6 #nav_effect li, .ie7 #nav_effect li {
+	display: inline;
+}

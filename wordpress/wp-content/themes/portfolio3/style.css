@@ -1,0 +1,488 @@
+/*
+Theme Name: PortFolio 3.0
+Template: bones
+
+*/
+
+@import url("../bones/style.css");
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+body {
+  background: url("images/dark_bg.png");
+  font: normal 100%/1.5 'Signika Negative', sans-serif;
+  position: relative;
+}
+div.conteneur {
+  width: 75%;
+  /* Taille de base : 960px */
+
+  margin: auto;
+  min-width: 750px;
+  max-width: 1500px;
+}
+header#top {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  width: 100%;
+}
+header#top h1 {
+  background: url("images/logo.png") no-repeat center;
+  text-indent: -9999px;
+  float: left;
+  vertical-align: middle;
+  margin-top: 5.5px;
+}
+header#top h1 a {
+  display: block;
+  width: 150px;
+  height: 39px;
+}
+header#top nav {
+  float: right;
+}
+
+#top h1
+{
+   color: red;	
+}
+
+
+/*
+header#top nav ul li.separationMenu
+{
+	border-right: 1px solid white;
+}
+*/
+section#Accueil {
+	background: url("images/bg.png");
+  padding-top: 80px;
+}
+
+section#Accueil h2 em
+{
+	color: #e12826;
+	display: block;
+	font-weight: bold;
+	font-family : Cambria,Georgia,Times,"Times New Roman",serif;
+}
+
+section#Accueil h2 {
+  color: #f69838;
+  width: 45%;
+  font-size: 3.375em;
+  line-height: 1.2em;
+  /* 54 / 16 px */
+
+  float: left;
+  font-weight: normal;
+
+}
+
+aside#introduction p
+{
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+section#Accueil aside#introduction {
+  width: 50%;
+  float: right;
+  font-size: 1.5em;
+  /* 24 / 16px */
+
+}
+.clear {
+  clear: both;
+}
+
+section#Contact {
+  clear: both;
+  padding: 1.5em 0;
+  background: url("images/dark_bg.png");
+  color: #FFF;
+  -webkit-box-shadow: inset 0px 5px 3px 1px #000000;
+  box-shadow: inset 0px 5px 3px 1px #000000;
+}
+
+#Derniere_realisations
+{
+	clear: both;
+	padding: 2em 0;
+	background: url("images/bg.png");
+	padding-bottom: 100px;
+/* 	border-top: 1px solid #ABABAB; */
+}
+
+#Derniere_realisations li
+{
+	list-style-position: inside;
+}
+
+
+section#Derniere_realisations h2,
+section#Contact h2,
+section#Creations h2 {
+  color: #000;
+  font-size: 1.875em;
+  margin-top: 20px;
+  /* 30 / 16px */
+
+  display: inline-block;
+}
+section#Derniere_realisations p#texte_Derniere_realisations em {
+  font-weight: bold;
+}
+section#Derniere_realisations p#texte_Derniere_realisations {
+  width: 75%;
+  font-size: 1.25em;
+  /* 20 / 16px */
+
+}
+aside#autoP {
+  width: 400px;
+  float: right;
+}
+/** Creations **/
+section#Creations {
+  margin-top: 30px;
+}
+section#Creations h2 {
+  color: #000;
+}
+ul#liste_creations li {
+  float: left;
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #000;
+  margin: 0.5em 0.5em;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+
+}
+/** Contact **/
+section#Contact form fieldset legend {
+  display: none;
+}
+section#Contact form fieldset {
+  width: 50%;
+  margin: auto;
+  color: #FFF;
+  font-size: 1.5em;
+  /* 24 / 16px */
+
+  font-weight: bold;
+}
+section#Contact form label {
+  width: 35%;
+  float: left;
+  clear: left;
+  display: block;
+}
+section#Contact form input,
+section#Contact form textarea {
+  width: 60%;
+  float: right;
+  display: block;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #FFF;
+}
+section#Contact form input {
+  height: 24px;
+}
+section#Contact form input[type="submit"],
+section#Contact form input[type="reset"] {
+  width: 20%;
+  height: 30px;
+  color: #FFF;
+  border: none;
+  margin-top: 20px;
+}
+section#Contact form input[type="submit"] {
+  clear: both;
+  float: right;
+  background-color: #425957;
+}
+section#Contact form input[type="reset"] {
+  float: left;
+  background-color: #D96666;
+}
+section#Contact form textarea {
+  height: 72px;
+  max-width: 450px;
+}
+hr {
+  clear: both;
+  margin: 20px 0;
+}
+
+
+#nav_effect { 
+	list-style: none; 
+	position: relative; 
+	margin-top: 6px;
+}
+#nav_effect li { 
+	display: inline-block; 
+}
+#nav_effect li a { 
+	position: relative; 
+	z-index: 200; 
+	text-transform: uppercase; 
+	
+	font-size: 1.125em;
+	  /* 18 / 16px */
+	
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 0.3em 0.7em;
+	display: block;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+
+}
+#nav_effect li a:hover { 
+	color: white; 
+}
+#nav_effect #magic-line-two { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100px; 
+	background: #f79a38; 
+	z-index: 100; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.current_page a { 
+	color: white !important; 
+}
+.ie6 #nav_effect li, .ie7 #nav_effect li {
+	display: inline;
+}
+
+/*
+div#lightbox
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9999;
+}
+*/
+
+
+#reseauxSociaux, #derniersArticles, #lecturesEnCours
+{
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 5px;
+	height: 150px;
+	margin-top: 50px;
+
+}
+
+footer 
+{
+	background: url("images/dark_bg.png");
+  -webkit-box-shadow: inset 0px 5px 3px 1px #000000;
+  box-shadow: inset 0px 5px 3px 1px #000000;
+  clear: both;
+  height: auto,
+}
+
+
+footer h3
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	color: white;
+}
+
+footer a
+{
+	font-size: 1.1em; /* 20/18 */
+	text-decoration: none;
+	color: #f69838;
+}
+
+footer a:hover
+{
+	color: #ffb330;
+}
+
+.thumbnail
+{
+	float: left;
+	margin-right: 30px;
+}
+
+#decorativeLine
+{
+	width: 45%;
+	margin: auto;
+	clear: both;
+}
