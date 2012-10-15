@@ -9,4 +9,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /wordpress/index.php [L]
 </IfModule>
 
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/xml text/css text/html text/plain text/javascript application/x-javascript application/javascript 
+</IfModule>
+
 # END WordPress
