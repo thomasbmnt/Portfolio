@@ -13,4 +13,19 @@ RewriteRule . /wordpress/index.php [L]
 AddOutputFilterByType DEFLATE text/text text/xml text/css text/html text/plain text/javascript application/x-javascript application/javascript 
 </IfModule>
 
+# <filesmatch "\.(ico|pdf|jpeg|jpg|png|gif|js|css)$">
+# Header set Expires "True, 15 Apr 2014 20:00:00 GMT"
+# </filesmatch>
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 10 days"
+	
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+</IfModule>
+
+Header unset ETag
+FileETag none
+
 # END WordPress
